@@ -55,7 +55,7 @@ const ColorPalette = () => {
             <div
               {...provided.droppableProps}
               ref={provided.innerRef}
-              className="flex space-x-3"
+              className="flex md:space-x-3 space-y-2 md:flex-row flex-col"
             >
               {colors.map((color, index) => (
                 <Draggable key={color} draggableId={color} index={index}>
